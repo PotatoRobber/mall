@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>修改商品</h1>
+<form action="updateproduct2" method="post">
+     <input type="hidden" name="productid" value="{$productdata.productid}"><p></p>
+    商品名称 <input type="text" name="product_name" value="{$productdata.product_name}"><p></p>
+    <!--类型编号 <input type="text" name="type_id" value="{$productdata.type_id}"><p></p>-->
+    类型名称 <select name="type_id" id="">
+                <volist name="typedata" id="p">
+                    <option value="{$p.type_id}">{$p.type_name}</option>
+                </volist>
+             </select><p></p>
+    商品价格 <input type="text" name="product_price" value="{$productdata.product_price}"><p></p>
+    商品图片地址 <input type="text" name="product_img" value="{$productdata.product_img}"><p></p>
+    商品详情 <textarea name="product_detail" id="" cols="50" rows="15">{$productdata.product_detail}</textarea><p></p>
+    商品库存 <input type="text" name="product_count" value="{$productdata.product_count}"><p></p>
+    商品是否显示 <input type="text" name="is_show" value="{$productdata.is_show}"><p></p>
+    商品排序 <input type="text" name="product_sort" value="{$productdata.product_sort}"><p></p>
+    商品是否推荐 <input type="text" name="is_recommend" value="{$productdata.is_recommend}"><p></p>
+
+    <input type="submit" value="修改">
+</form>
+</body>
+</html>

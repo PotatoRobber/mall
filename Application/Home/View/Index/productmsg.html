@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>商品管理</h1>
+<a href="__ROOT__/index.php/Home/Index/addproduct">新增</a>
+<table border="1" cellpadding="0" cellspacing="0" width="1200">
+    <tr>
+        <th>商品编号</th>
+        <th>商品名称</th>
+        <th>类型名称</th>
+        <th>商品价格</th>
+        <th>商品图片地址</th>
+        <th>商品详情</th>
+        <th>商品库存</th>
+        <th>商品是否显示</th>
+        <th>商品排序</th>
+        <th>商品是否推荐</th>
+        <th>操作</th>
+    </tr>
+    <volist name = "list" id="vo">
+        <tr>
+            <td>{$vo.productid}</td>
+            <td>{$vo.product_name}</td>
+            <td>{$vo.type_name}</td>
+            <td>{$vo.product_price}</td>
+            <td>{$vo.product_img}</td>
+            <td>{$vo.product_detail}</td>
+            <td>{$vo.product_count}</td>
+            <td>{$vo.is_show}</td>
+            <td>{$vo.product_sort}</td>
+            <td>{$vo.is_recommend}</td>
+            <td>
+                <a href="__ROOT__/index.php/Home/Index/updateproduct?pid={$vo.productid}">修改</a>
+                <a href="__ROOT__/index.php/Home/Index/delproduct?pid={$vo.productid}" ONCLICK="return confirm('确认删除？')">删除</a>
+            </td>
+        </tr>
+    </volist>
+</table>
+{$page}<!--控制器传来的html标签-->
+</body>
+</html>

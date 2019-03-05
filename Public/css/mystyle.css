@@ -1,0 +1,23 @@
+.main{
+    width: 100%;
+    height: 900px;
+
+}
+.main .top{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(215, 95, 22, 0.53);
+}
+.main .content{
+    width: 100%;
+}
+.floatleft{
+    float: left;
+}
+.content .left{
+    width: 10%;
+}
+.content .right{
+    width: 89%;
+    height: 100%;
+}

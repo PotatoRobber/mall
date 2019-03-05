@@ -1,0 +1,54 @@
+[ 2018-11-02T14:57:25+08:00 ] ::1 /mall/index.php/UserInterface/Frontindex/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_ptype` [ RunTime:0.0620s ]
+SQL: SHOW COLUMNS FROM `tp_productinfo` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `tp_ptype` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_ptype`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_productinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_productinfo` WHERE `is_recommend` = 1 AND `is_show` = 1 ORDER BY product_sort LIMIT 10   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_productinfo` WHERE `is_recommend` = 0 AND `is_show` = 1 ORDER BY product_sort LIMIT 10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: car D:\phpStudy\WWW\mall\Application\UserInterface\Controller\FrontindexController.class.php 第 32 行.
+NOTIC: [8] Undefined index: userdata D:\phpStudy\WWW\mall\Application\UserInterface\Controller\FrontindexController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-02T14:57:26+08:00 ] ::1 /mall/index.php/UserInterface/Frontindex/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-02T14:57:26+08:00 ] ::1 /mall/index.php/UserInterface/Frontindex/images/facebook.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-02T14:57:27+08:00 ] ::1 /mall/index.php/UserInterface/Frontindex/images/twitter.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-02T14:57:27+08:00 ] ::1 /mall/index.php/UserInterface/Frontindex/images/skype.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-02T14:57:27+08:00 ] ::1 /mall/index.php/UserInterface/Frontindex/images/linkedin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

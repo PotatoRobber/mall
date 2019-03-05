@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>类型管理</h1>
+    <a href="addtype.html">新增</a>
+    <table border="1" cellpadding="0" cellspacing="0" width="800">
+        <tr>
+            <th>类型编号</th>
+            <th>类型名称</th>
+            <th>备注</th>
+            <th>操作</th>
+        </tr>
+        <volist name = "typedata" id="vo">
+            <tr>
+                <td>{$vo.type_id}</td>
+                <td>{$vo.type_name}</td>
+                <td>{$vo.type_note}</td>
+                <td>
+                    <a href="updatetype?tid={$vo.type_id}">修改</a>
+                    <a href="deltype?tid={$vo.type_id}" ONCLICK="return confirm('确认删除？')">删除</a>
+                </td>
+            </tr>
+        </volist>
+    </table>
+</body>
+</html>

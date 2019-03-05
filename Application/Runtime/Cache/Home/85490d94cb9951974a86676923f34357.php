@@ -1,0 +1,16 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>修改类型</h1>
+<form action="updatetype2" method="post">
+     <input type="hidden"  name="typeid" value="<?php echo ($typedata["type_id"]); ?>"><p></p>
+    类型名称 <input type="text" name="typename" value="<?php echo ($typedata["type_name"]); ?>"><p></p>
+    类型说明 <textarea name="typenote" id="" cols="50" rows="15" ><?php echo ($typedata["type_note"]); ?></textarea><p></p>
+    <input type="submit" value="修改">
+</form>
+</body>
+</html>
